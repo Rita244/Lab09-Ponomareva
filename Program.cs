@@ -1,15 +1,19 @@
 ﻿// int totalExercises = 1;
 
-// for (int number = 8; number >= totalExercises; number--1)
+// for (int number = totalExercises; number >= 1; number--)
 // {
 //    Console.WriteLine($"Упражнение {number}");
 // }
 // Console.WriteLine("Домашнее задание готово");
 
+
+
 // for (int room = 5; room <= 50; room += 5)
 // {
 //    Console.WriteLine($"Кабинет {room}");
 // }
+
+
 
 // int totalWeeks = 3;
 
@@ -19,6 +23,18 @@
 //    {
 //       Console.WriteLine($"Неделя {week}, день {day}");
 //    }
-// }
+//    Console.WriteLine("^_^");
 
+
+// int skip = 0;
+
+// for (int ticket = 1; ticket <= 30; ticket++)
+// {
+//    if (ticket == 4 || ticket == 12 || ticket == 19)
+//    {
+//       skip++;
+//       continue;
+//    }
+//    Console.WriteLine($"Билет: {ticket}, пропущено до него: {skip}");
+// }
 
