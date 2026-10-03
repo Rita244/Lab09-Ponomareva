@@ -81,17 +81,45 @@
 // Console.Write("Введите свою фамилию: ");
 // string surname = Console.ReadLine()!.Trim();
 
-// if (string.IsNullOrEmpty(surname))
-// {
-//    Console.WriteLine("Фамилия не введена. Завершение работы.");
-//    return;
+// if (string.IsNullOrEmpty(surname)) {
+//     Console.WriteLine("Фамилия не введена. Завершение работы.");
+//     return;
 // }
+
 // Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
 
 // var assigned = Enumerable.Range(1, 10)
-//    OrderBy( => rnd.Next())
-//    Take(2)
-//    OrderBy(x => x)
-//    ToList();
+//     .OrderBy(_ => rnd.Next())
+//     .Take(2)
+//     .OrderBy(x => x)
+//     .ToList();
 
 // Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+// ##ЗАДАЧА 6
+
+// for (int i = 1; i <= 30; i++)
+// {
+//     if (i % 4 == 0)
+//     {
+//         continue; 
+//     }
+//     Console.Write(i + " ");
+// }
+// Console.WriteLine();
+
+// ##ЗАДАЧА 9
+
+int N = 20; 
+int sum = 0;
+
+for (int i = 1; i <= N; i++)
+{
+    if (i % 5 == 0)
+    {
+        continue; 
+    }
+    sum += i; 
+}
+
+Console.WriteLine($"Сумма чисел от 1 до {N} (без кратных 5) = {sum}");
